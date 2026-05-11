@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TwirlNow — Privacy Policy</title>
-  <meta name="description" content="Privacy policy for TwirlNow, a personal automation tool for AI-news carousels and videos.">
+  <meta name="description" content="Privacy policy for TwirlNow.">
   <style>
     :root {
       --bg: #f7f5ee;
@@ -22,92 +22,42 @@
       line-height: 1.6;
     }
     .wrap {
-      max-width: 720px;
+      max-width: 640px;
       margin: 0 auto;
-      padding: 48px 24px 96px;
+      padding: 64px 24px 96px;
     }
     header {
-      text-align: center;
-      margin-bottom: 48px;
-      padding-bottom: 32px;
+      margin-bottom: 32px;
+      padding-bottom: 24px;
       border-bottom: 2px solid var(--rule);
     }
-    header img {
-      width: 96px;
-      height: 96px;
-      border-radius: 16px;
-      margin-bottom: 16px;
-    }
     h1 {
-      font-size: 36px;
+      font-size: 32px;
       font-weight: 800;
       margin: 0 0 4px;
-      color: var(--ink);
       letter-spacing: -0.5px;
     }
     .subtitle {
       color: var(--dim);
-      font-size: 14px;
+      font-size: 13px;
       margin: 0;
       letter-spacing: 0.5px;
       text-transform: uppercase;
     }
     h2 {
-      font-size: 22px;
+      font-size: 20px;
       font-weight: 700;
       color: var(--accent);
-      margin: 40px 0 12px;
+      margin: 32px 0 8px;
     }
-    p {
-      margin: 0 0 16px;
-      font-size: 17px;
-    }
-    ul {
-      padding-left: 22px;
-      margin: 0 0 16px;
-    }
-    li {
-      margin-bottom: 8px;
-      font-size: 17px;
-    }
-    strong { font-weight: 700; }
-    a {
-      color: var(--accent);
-      text-decoration: none;
-      border-bottom: 1px solid var(--rule);
-    }
-    a:hover { border-bottom-color: var(--accent); }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 0 0 24px;
-      font-size: 15px;
-    }
-    th, td {
-      text-align: left;
-      padding: 10px 12px;
-      border-bottom: 1px solid var(--rule);
-      vertical-align: top;
-    }
-    th {
-      font-weight: 700;
-      color: var(--accent);
-      background: rgba(15, 33, 71, 0.04);
-    }
-    code {
-      font-family: "SF Mono", Menlo, Consolas, monospace;
-      font-size: 14px;
-      background: rgba(15, 33, 71, 0.06);
-      padding: 2px 6px;
-      border-radius: 3px;
-    }
+    p { margin: 0 0 14px; font-size: 16px; }
+    a { color: var(--accent); }
     footer {
-      text-align: center;
-      margin-top: 64px;
-      padding-top: 24px;
+      margin-top: 48px;
+      padding-top: 20px;
       border-top: 2px solid var(--rule);
       color: var(--dim);
-      font-size: 14px;
+      font-size: 13px;
     }
   </style>
 </head>
@@ -115,80 +65,28 @@
   <div class="wrap">
     <header>
       <h1>TwirlNow</h1>
-      <p class="subtitle">Privacy Policy</p>
+      <p class="subtitle">Privacy Policy &nbsp;·&nbsp; 2026-05-07</p>
     </header>
 
-    <p><em>Last updated: 2026-05-07</em></p>
+    <h2>What this app does</h2>
+    <p>TwirlNow publishes carousels and videos to the operator's own personal LinkedIn account. It is not a hosted service. It runs on the operator's machine.</p>
 
-    <p><strong>TwirlNow</strong> is a personal automation tool operated by Srikanth Daggumalli. It generates editorial-style carousels and short videos from publicly available AI/tech news headlines and publishes them to the operator's own social channels. This page explains what data the tool handles and how.</p>
+    <h2>Data we access</h2>
+    <p>With your permission, the app reads your LinkedIn profile ID and uses it to publish posts you authored to your own feed. It does not read your connections, messages, or any other account data.</p>
 
-    <h2>Who this policy applies to</h2>
-    <p>This policy applies to anyone who:</p>
-    <ul>
-      <li>Lands on this page itself, or</li>
-      <li>Interacts with a TwirlNow-published post on LinkedIn, YouTube, or other social platforms.</li>
-    </ul>
+    <h2>Data we store</h2>
+    <p>The OAuth token LinkedIn issues is stored locally on the operator's machine. It is never uploaded, shared, or sold.</p>
 
-    <h2>Data TwirlNow does NOT collect</h2>
-    <p>TwirlNow is operator-only software. It is <strong>not</strong> a hosted service. It does <strong>not</strong>:</p>
-    <ul>
-      <li>Collect personal data from people who view or engage with the published posts.</li>
-      <li>Track click-through, IP addresses, or analytics on social engagement.</li>
-      <li>Set cookies or fingerprint browsers.</li>
-      <li>Sell, share, or monetize any user data.</li>
-    </ul>
-    <p>There is no account to sign up for, no email list, and no server-side database tracking individuals.</p>
+    <h2>Data we share</h2>
+    <p>None. TwirlNow does not transmit your LinkedIn data to any third party.</p>
 
-    <h2>Data the operator's local install handles</h2>
-    <p>When the operator runs TwirlNow on their own machine, the tool may handle:</p>
-    <table>
-      <thead>
-        <tr><th>Data</th><th>Purpose</th><th>Stored where</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>News headlines from public RSS feeds (Google News, Hacker News, TechCrunch, etc.)</td><td>Editorial content for the carousels</td><td>Local disk only</td></tr>
-        <tr><td>Public tweets fetched via the operator's authenticated X session</td><td>Visual content + commentary</td><td>Local disk only</td></tr>
-        <tr><td>OAuth refresh tokens for LinkedIn, YouTube, etc.</td><td>Authorizing the operator's own posts</td><td>Local disk only (<code>config/</code>)</td></tr>
-        <tr><td>Anthropic / Gemini / Groq API keys provided by the operator</td><td>LLM-driven captioning + QC</td><td>Local environment variables</td></tr>
-      </tbody>
-    </table>
-    <p><strong>Nothing is transmitted to TwirlNow servers because TwirlNow does not operate any servers.</strong> All processing happens locally on the operator's machine.</p>
-
-    <h2>Third-party services TwirlNow talks to</h2>
-    <p>When the operator runs the tool, the following third-party APIs are queried using credentials the operator owns:</p>
-    <ul>
-      <li><strong>News RSS feeds</strong> — Google News, Hacker News, VentureBeat, TechCrunch, MIT Tech Review, Wired, Ars Technica, The Verge.</li>
-      <li><strong>X (Twitter)</strong> — via the operator's authenticated browser session, to capture publicly visible tweets.</li>
-      <li><strong>Wikimedia Commons</strong> — to fetch publicly licensed brand logos for slide rendering.</li>
-      <li><strong>Anthropic / Google Gemini / Groq</strong> — for LLM-driven editorial summarization, using API keys the operator provides.</li>
-      <li><strong>LinkedIn API</strong> — to publish carousels and videos to the operator's own personal LinkedIn account, using an OAuth token the operator authorized.</li>
-      <li><strong>YouTube Data API</strong> — to publish videos to the operator's own YouTube channel.</li>
-      <li><strong>Telegram Bot API</strong> — operator-only notifications and pipeline triggers.</li>
-    </ul>
-    <p>Each of these services has its own privacy policy that governs what they do with requests made by TwirlNow on the operator's behalf. TwirlNow does not relay any user data to these services beyond the public content the operator chose to publish.</p>
-
-    <h2>How OAuth tokens are stored</h2>
-    <p>When the operator authorizes TwirlNow to post on their behalf (LinkedIn, YouTube, etc.), the resulting OAuth tokens are stored as plain-text JSON files in the local <code>config/</code> directory. These files are listed in the project's <code>.gitignore</code> and are never committed to the public GitHub repository.</p>
-    <p>Tokens can be revoked at any time:</p>
-    <ul>
-      <li><strong>LinkedIn</strong>: <a href="https://www.linkedin.com/psettings/permitted-services">linkedin.com/psettings/permitted-services</a> → revoke "TwirlNow"</li>
-      <li><strong>YouTube / Google</strong>: <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a></li>
-      <li>Or by deleting the local <code>config/*_token.json</code> file.</li>
-    </ul>
-
-    <h2>Source code</h2>
-    <p>TwirlNow is open source. The full implementation lives at <a href="https://github.com/daggumalli/TwirlNow">github.com/daggumalli/TwirlNow</a> — you can audit exactly what the tool does and how it handles data.</p>
-
-    <h2>Changes to this policy</h2>
-    <p>If the policy materially changes, the "Last updated" date at the top of this page will be updated. Material changes (e.g., introducing analytics, multi-tenant deployment) will be noted in the repository's commit history.</p>
+    <h2>How to revoke</h2>
+    <p>Revoke access at any time at <a href="https://www.linkedin.com/psettings/permitted-services">linkedin.com/psettings/permitted-services</a>.</p>
 
     <h2>Contact</h2>
-    <p>Questions about this policy or how TwirlNow handles data:</p>
-    <p><strong>Srikanth Daggumalli</strong> — <a href="mailto:daggumalli85@gmail.com">daggumalli85@gmail.com</a></p>
+    <p><a href="mailto:daggumalli85@gmail.com">daggumalli85@gmail.com</a></p>
 
-    <footer>
-      &copy; 2026 TwirlNow. All rights reserved.
-    </footer>
+    <footer>&copy; 2026 TwirlNow</footer>
   </div>
 </body>
 </html>
